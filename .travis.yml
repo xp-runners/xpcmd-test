@@ -1,0 +1,12 @@
+language: php
+
+php:
+  - 7.0
+
+services: docker
+
+script:
+  - export
+  - cd 7.0
+  - composer install
+  - docker build -t xpcmd/test:7.0 7.0 
