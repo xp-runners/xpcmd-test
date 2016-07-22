@@ -6,7 +6,6 @@ php:
 services: docker
 
 script:
-  - export
-  - cd 7.0
+  - cd $TRAVIS_PHP_VERSION
   - composer install
-  - docker build -t xpcmd/test:7.0 7.0 
+  - docker build -t xpcmd/test:$TRAVIS_PHP_VERSION .
