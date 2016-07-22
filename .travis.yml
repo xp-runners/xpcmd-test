@@ -10,6 +10,7 @@ script:
   - cd $TRAVIS_PHP_VERSION
   - composer install
   - docker build -t xpcmd/test:$TRAVIS_PHP_VERSION .
+  - docker run --rm xpcmd/test:$TRAVIS_PHP_VERSION -e '$this->assertTrue(true)'
 
 after_success:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
