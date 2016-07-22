@@ -1,7 +1,7 @@
 # Supported tags
 
-* `7.0`, `latest`
-* `5.6`
+* `7.0`, `latest` *([7.0/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.0/Dockerfile))*
+* `5.6` *([5.6/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/5.6/Dockerfile))*
 
 ## Running test code
 
