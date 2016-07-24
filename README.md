@@ -1,4 +1,11 @@
-# Supported tags
+XP Unittest Docker image
+========================
+
+[![Build Status on TravisCI](https://secure.travis-ci.org/xp-runners/xpcmd-test.svg)](http://travis-ci.org/xp-runners/xpcmd-test)
+[![BSD License](https://raw.githubusercontent.com/xp-framework/web/master/static/licence-bsd.png)](https://github.com/xp-runners/reference/blob/master/LICENSE.md)
+
+
+## Supported tags
 
 * `7.0`, `latest` *([7.0/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.0/Dockerfile))*
 * `5.6` *([5.6/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/5.6/Dockerfile))*
