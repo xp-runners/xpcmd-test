@@ -3,6 +3,8 @@ XP Docker "test" command ChangeLog
 
 ## ?.?.? / ????-??-??
 
+## 1.2.0 / 2016-07-24
+
 * Enable [BCMath Arbitrary Precision Mathematics](http://php.net/bcmath)
   for both PHP 5.6 and PHP 7.0
   (@thekid)
