@@ -21,4 +21,4 @@ VOLUME ["/app"]
 
 WORKDIR /app
 
-ENTRYPOINT ["mono", "/usr/bin/xp", "test"]
+ENTRYPOINT ["/usr/bin/xp", "test"]
