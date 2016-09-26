@@ -4,6 +4,7 @@ MAINTAINER XP Group <xp@xp-framework.net>
 
 RUN apt-get update && apt-get install -y \
     apt-transport-https \
+  && docker-php-ext-install -j$(nproc) bcmath \
   && rm -rf /var/lib/apt/lists/*
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D401AB61
@@ -20,4 +21,4 @@ VOLUME ["/app"]
 
 WORKDIR /app
 
-ENTRYPOINT ["mono", "/usr/bin/xp", "test"]
+ENTRYPOINT ["/usr/bin/xp", "test"]
