@@ -28,5 +28,9 @@ $ docker run --rm -v /path/to/project:/app xpcmd/test src/test/php
 The docker images come with the PHP version specified in their tag and the newest XP runners and framework versions available:
 
 * XP Runners, 7.8.5 - [see here](https://github.com/xp-runners/reference/releases)
-* XP Framework, 7.7.0 - [see here](https://github.com/xp-framework/core/releases)
 * XP Unittests, 7.1.1 - [see here](https://github.com/xp-framework/unittest/releases)
+
+The framework version differs:
+
+* PHP 5.6: XP Framework, 7.7.0 - [see here](https://github.com/xp-framework/core/releases)
+* PHP 7.0+: XP Framework, 8.0.0 - [see here](https://github.com/xp-framework/core/releases)
