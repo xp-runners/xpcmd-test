@@ -1,0 +1,5 @@
+{
+    "require": {
+        "xp-framework/unittest": "^9.4"
+    }
+}

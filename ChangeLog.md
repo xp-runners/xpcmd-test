@@ -3,6 +3,10 @@ XP Docker "test" command ChangeLog
 
 ## ?.?.? / ????-??-??
 
+## 1.3.0 / 2018-03-30
+
+* Added PHP 7.2 support - @thekid
+
 ## 1.2.0 / 2016-07-24
 
 * Enable [BCMath Arbitrary Precision Mathematics](http://php.net/bcmath)
