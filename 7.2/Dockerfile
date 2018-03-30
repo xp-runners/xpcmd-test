@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y \
   && docker-php-ext-install -j$(nproc) bcmath \
   && rm -rf /var/lib/apt/lists/*
 
+COPY ./php-cli-meta.deb /root
+
+RUN dpkg -i /root/php5-cli-meta.deb && rm /root/php5-cli-meta.deb
+
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D401AB61
 
 RUN echo 'deb https://dl.bintray.com/xp-runners/debian jessie main' > /etc/apt/sources.list.d/xp.list
