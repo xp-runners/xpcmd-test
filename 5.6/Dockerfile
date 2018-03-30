@@ -3,7 +3,7 @@ FROM php:5.6
 MAINTAINER XP Group <xp@xp-framework.net>
 
 RUN apt-get update && apt-get install -y \
-    apt-transport-https \
+    apt-transport-https gnupg \
   && docker-php-ext-install -j$(nproc) bcmath \
   && rm -rf /var/lib/apt/lists/*
 
