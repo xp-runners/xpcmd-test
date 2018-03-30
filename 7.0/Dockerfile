@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./php-cli-meta.deb /root
 
-RUN dpkg -i /root/php5-cli-meta.deb && rm /root/php5-cli-meta.deb
+RUN dpkg -i /root/php-cli-meta.deb && rm /root/php-cli-meta.deb
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D401AB61
 
