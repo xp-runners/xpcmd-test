@@ -15,8 +15,8 @@ addons:
 services: docker
 
 script:
-  - sh meta/package.sh $(cat $TRAVIS_PHP_VERSION/php-package) $TRAVIS_PHP_VERSION
   - cd $TRAVIS_PHP_VERSION
+  - sh ../meta/package.sh $(cat php-package)
   - composer install
   - docker build -t xpcmd/test:$TRAVIS_PHP_VERSION .
   - docker run --rm xpcmd/test:$TRAVIS_PHP_VERSION -e '$this->assertTrue(true)'
