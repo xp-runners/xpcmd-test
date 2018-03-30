@@ -6,6 +6,12 @@ php:
   - 7.1
   - 7.2
 
+addons:
+  apt:
+    packages:
+      - fakeroot
+      - binutils
+
 services: docker
 
 script:
@@ -13,6 +19,7 @@ script:
   - composer install
   - docker build -t xpcmd/test:$TRAVIS_PHP_VERSION .
   - docker run --rm xpcmd/test:$TRAVIS_PHP_VERSION -e '$this->assertTrue(true)'
+  - sh meta/package.sh $(cat $TRAVIS_PHP_VERSION/php-package) $TRAVIS_PHP_VERSION
 
 after_success:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"

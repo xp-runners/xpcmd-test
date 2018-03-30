@@ -1,0 +1,9 @@
+Package: php-cli-meta
+Priority: extra
+Section: devel
+Installed-Size: 0
+Maintainer: XP Team <xp-runners@xp-framework.net>
+Architecture: all
+Version: 1.0.0-1
+Provides: @@PROVIDES@@
+Description: XP Runners
