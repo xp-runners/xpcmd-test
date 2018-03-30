@@ -17,7 +17,7 @@ script:
 after_success:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push xpcmd/test:$TRAVIS_PHP_VERSION
-  - if [ "$TRAVIS_PHP_VERSION" == "7.0" ]; then
+  - if [ "$TRAVIS_PHP_VERSION" == "7.2" ]; then
       docker tag xpcmd/test:$TRAVIS_PHP_VERSION xpcmd/test:latest;
       docker push xpcmd/test:latest;
     fi
