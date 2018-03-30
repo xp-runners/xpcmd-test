@@ -7,9 +7,9 @@ XP Unittest Docker image
 
 ## Supported tags
 
-* `7.2` *([7.2/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.2/Dockerfile))*
+* `7.2`, `latest` *([7.2/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.2/Dockerfile))*
 * `7.1` *([7.1/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.1/Dockerfile))*
-* `7.0`, `latest` *([7.0/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.0/Dockerfile))*
+* `7.0` *([7.0/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/7.0/Dockerfile))*
 * `5.6` *([5.6/Dockerfile](https://github.com/xp-runners/xpcmd-test/blob/master/5.6/Dockerfile))*
 
 ## Running test code
@@ -28,10 +28,17 @@ $ docker run --rm -v /path/to/project:/app xpcmd/test src/test/php
 
 The docker images come with the PHP version specified in their tag and the newest XP runners and framework versions available:
 
-* XP Runners, 7.8.5 - [see here](https://github.com/xp-runners/reference/releases)
-* XP Unittests, 7.1.1 - [see here](https://github.com/xp-framework/unittest/releases)
+* XP Runners, 8-SERIES- [see here](https://github.com/xp-runners/reference/releases)
 
-The framework version differs:
+The framework and library versions differ:
 
-* PHP 5.6: XP Framework, 7.7.0 - [see here](https://github.com/xp-framework/core/releases)
-* PHP 7.0+: XP Framework, 8.0.0 - [see here](https://github.com/xp-framework/core/releases)
+### PHP 7.0+
+
+* XP Framework, 9-SERIES - [see here](https://github.com/xp-framework/core/releases)
+* XP Unittests, 9-SERIES - [see here](https://github.com/xp-framework/unittest/releases)
+
+### PHP 5.6
+
+* XP Framework, 8-SERIES - [see here](https://github.com/xp-framework/core/releases)
+* XP Unittests, 8-SERIES - [see here](https://github.com/xp-framework/unittest/releases)
+
